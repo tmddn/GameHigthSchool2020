@@ -6,9 +6,13 @@ public class ScrollingObject : MonoBehaviour
 {
     public float m_Speed = 1f;
 
+    // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.left 
+        //Vector3 position = transform.position;
+        //position.x = position.x - m_Speed * Time.deltaTime;
+
+        transform.position += Vector3.left
             * m_Speed * Time.deltaTime;
     }
 }
